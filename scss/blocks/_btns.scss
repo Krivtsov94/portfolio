@@ -1,0 +1,57 @@
+.btn,
+a.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 80px;
+	background-color: #039be5;
+
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: #11acfa;
+	}
+
+	&--wide {
+		width: 100%;
+	}
+}
+
+.btn-link,
+a.btn-link {
+	display: inline-block;
+	padding: 6px 10px;
+	border-radius: 3px;
+	background-color: #f2f2f2;
+
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	text-align: left;
+
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+
+	transition: background-color 0.2s ease-in;
+
+	@include mobile {
+		padding: 10px;
+	}
+
+	&:hover {
+		background-color: #dedede;
+	}
+
+	&--wide {
+		width: 100%;
+	}
+}

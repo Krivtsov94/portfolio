@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700,800);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,700);
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+a {
+	color: #0F7DFF;
+	text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+	outline-offset: 1px;
+	outline: #005fcc auto 1px;
+}
+
+.none {
+	display: none !important;
+}
+
+.visible-desktop {
+	@include tablet {
+		display: none;
+	}
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}

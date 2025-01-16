@@ -1,0 +1,19 @@
+.socials {
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+
+	li {
+		border: 1px solid rgba(255, 255, 255, 0);
+		border-radius: 50%;
+
+		transition: border 0.2s ease-in, margin 0.2s ease-in, padding 0.2s ease-in;
+	}
+
+	li:hover {
+		margin: -5px;
+		padding: 5px;
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+}

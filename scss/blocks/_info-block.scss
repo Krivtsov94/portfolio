@@ -1,0 +1,60 @@
+.info-block {
+	padding: 30px 30px 50px;
+	background-color: #fbfbfb;
+
+	@include tablet {
+		padding: 20px;
+	}
+
+	&--accent {
+		background-color: #f1f8fb;
+	}
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	color: #000;
+
+	p + p {
+		margin-top: 15px;
+
+		@include mobile {
+			margin-top: 10px;
+		}
+	}
+}
+
+.info-block__title {
+	margin-bottom: 20px;
+}
+
+.info-block__badges {
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.info-block__list {
+	ul {
+		line-height: 130%;
+
+		li + li {
+			margin-top: 10px;
+		}
+
+		li {
+			position: relative;
+			padding-left: 15px;
+
+			&::before {
+				content: '—';
+
+				position: absolute;
+				left: 0;
+				top: 0px;
+			}
+		}
+	}
+}
